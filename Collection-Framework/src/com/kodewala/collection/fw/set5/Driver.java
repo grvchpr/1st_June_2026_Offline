@@ -1,6 +1,5 @@
 package com.kodewala.collection.fw.set5;
 
-import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
