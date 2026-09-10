@@ -34,17 +34,21 @@ public class Driver {
 		Payment p4 = new Payment("MNBVCX");
 		Payment p3 = new Payment("MNHGRE");
 
+		// Storing the data
 		paymentSet.add(p1);
 		paymentSet.add(p2);
 		paymentSet.add(p3);
 		paymentSet.add(p4);
-		
-		Iterator<Payment> itr = paymentSet.iterator();
 
-		while (itr.hasNext()) 
-		{
+		Iterator<Payment> itr = paymentSet.iterator();
+		// Processing the data (Task is : Find the ref id which is starting with A)
+		while (itr.hasNext()) {
 			Payment pyament = itr.next();
-			System.out.println(pyament.refId);
+			if (pyament.refId.startsWith("A")) 
+			{
+				System.out.println(pyament.refId);
+			}
+
 		}
 
 	}
